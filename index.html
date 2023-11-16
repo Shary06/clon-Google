@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clon Google</title>
     <script src="https://kit.fontawesome.com/92505372e0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/estilos/styles.css">
 </head>
 <body>
@@ -14,7 +17,7 @@
                     <button id="boton" type="button"><img id="menu" src="/imagenes/menu-de-puntos.png"></button>
                     <button id="iniciar-sesion">Iniciar sesión</button>
                 </div>
-                <div class="imagenes-encabezado">
+                <div class="opciones-encabezado">
                     <a href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a>
                     <a href="https://www.google.com.mx/imghp?hl=es&authuser=0&ogbl">Imagenes</a>
                 </div> 
@@ -35,9 +38,16 @@
                 <img id="voz-busqueda"src="/imagenes/voz-de-google.png" alt="busqueda por voz">
             </div>
         </section>
-        <section>
-            <a target="-blank" class="buscar-google" href="https://doodles.google/">Buscar con Google</a>
-            <a target="-blank" class="suerte" href="https://doodles.google/">Voy a tener suerte</a>
+        <section class="botones">
+            <button class="btn-search">
+                <a target="_blank" id="search" href="https://doodles.google/">Buscar con Google</a>
+            </button>
+            <button class="btn-search">
+                <a target="_blank" id="lucky" href="https://doodles.google/">Voy a tener suerte</a>
+            </button>
+
+            
+            
         </section>
 
        
