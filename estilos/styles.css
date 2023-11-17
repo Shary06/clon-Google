@@ -1,6 +1,9 @@
 body{
+    display: flex;
+    flex-direction: column;
     margin:0;
     font-family:'Roboto';
+    min-height: 100vh;
 }
 
 header {
@@ -8,15 +11,54 @@ header {
     padding: 10px 5px;
  }
 
+ .encabezado{
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ .opciones-encabezado{
+    padding: 15px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+ #gmail, #imagenes{
+    margin: 0 5px;
+ }
+
+ .botones-encabezado{
+    padding: 5px;
+    margin: 5px;
+}
+
+ #boton{
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+#boton:hover{ 
+    background-color: rgb(218, 213, 213);
+    border-radius: 50%;
+}
+
  main{
     margin: 20px 0px;
     padding: 25px 5px;
  }
 
-.botones-encabezado{
-    float: right;
-    padding: 5px;
-    margin: 5px;
+ #gmail:hover{
+    border-bottom: 1px solid;
+ }
+
+ #imagenes:hover{
+    border-bottom: 1px solid;
+ }
+
+#iniciar-sesion:hover{ 
+    background-color: rgb(11, 71, 182);
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
 
 #iniciar-sesion{
@@ -30,14 +72,7 @@ header {
     font-size: 15px;
     width: 135px;
     
-}
-
-.opciones-encabezado{
-    float: right;
-    padding: 15px;
-    margin: 10px;
-    width: 105px;
-    font-size: 14px;
+    
 }
 
 a:link, a:visited, a:active {
@@ -46,9 +81,9 @@ a:link, a:visited, a:active {
 }
 
 .logo-google{
-text-align: center;
-margin: 25px 0px;
-padding: 15px 0px;
+    text-align: center;
+    margin: 25px 0px;
+    padding: 20px 0px;
 }
 
 #menu{
@@ -56,19 +91,13 @@ padding: 15px 0px;
     height: 15px;
 }
 
-#boton{
-    background-color: transparent;
-    border:none
-}
-
 i{
     width: 30px;
     padding: 12px;
-    float: left;
 }
 
 
-.barra-de-navegacion{
+#input-search{
     display: flex;
     justify-content:space-between;
     z-index: 3;
@@ -83,6 +112,11 @@ i{
     width: auto;
     max-width: 584px;
 }
+
+#input-search:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
 
 #imagen-busqueda{
     width: 30px;
@@ -115,13 +149,53 @@ i{
 }
 
 .botones{
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.btn-search:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
 
+footer{
+    margin-top: auto;
+    background-color:#f2f2f2;;
+}
 
+.pais{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #202124;
+}
 
+.footer-enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-enlaces-a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #202124;
+}
+
+.footer-enlaces-a > a{
+    margin: 0 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+@media (min-width:1000px){
+    .footer-enlaces{
+        justify-content: space-between;
+    }
+}
 
 
